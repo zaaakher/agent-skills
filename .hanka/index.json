@@ -45,5 +45,17 @@
     "public": false,
     "created": "2026-02-24",
     "updated": "2026-02-24"
+  },
+  {
+    "slug": "ui-design",
+    "filePath": "skills/ui-design/SKILL.md",
+    "name": "ui-design",
+    "description": "Professional UI design and frontend interface guidelines. Use this skill when creating web pages, mini-program interfaces, prototypes, or any frontend UI components that require distinctive, production-grade design with exceptional aesthetic quality.",
+    "tags": [],
+    "category": "general",
+    "version": "1.0.0",
+    "public": false,
+    "created": "2026-02-24",
+    "updated": "2026-02-24"
   }
 ]
