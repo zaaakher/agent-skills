@@ -14,5 +14,24 @@
     "public": false,
     "created": "2026-02-24",
     "updated": "2026-02-24"
+  },
+  {
+    "slug": "food-commerce-ui-designer",
+    "filePath": "skills/food-commerce-ui-designer/SKILL.md",
+    "name": "food-commerce-ui-designer",
+    "description": "Create distinctive, production-grade frontend interfaces with high design quality for an ecommerce brand selling sauces and bone broth. Use this skill when building any web components, pages, product listings, landing sections, or UI elements for the store. Generates warm, inviting, food-forward designs with smooth Motion-powered animations and colorful, friendly aesthetics. Always use this skill for any UI, page, component, or layout work — even if the user just says \"make a card\" or \"build a section\" or \"add animations\".",
+    "license": "Complete terms in LICENSE.txt",
+    "tags": [
+      "ecommerce",
+      "food",
+      "animated",
+      "ui",
+      "frontend"
+    ],
+    "category": "general",
+    "version": "2.0.0",
+    "public": false,
+    "created": "2026-02-24",
+    "updated": "2026-02-24"
   }
 ]
