@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "slug": "elegant-frontend-design",
+    "filePath": "skills/elegant-frontend-design/SKILL.md",
+    "name": "elegant-frontend-design",
+    "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, or applications. Generates creative, polished code that avoids generic AI aesthetics.",
+    "tags": [
+      "ui",
+      "design",
+      "frontend"
+    ],
+    "category": "general",
+    "version": "1.0.0",
+    "public": false,
+    "created": "2026-02-24",
+    "updated": "2026-02-24"
+  }
+]
