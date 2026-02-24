@@ -69,5 +69,17 @@
     "public": false,
     "created": "2026-02-24",
     "updated": "2026-02-24"
+  },
+  {
+    "slug": "web-design-guidelines",
+    "filePath": "skills/web-design-guidelines/SKILL.md",
+    "name": "web-design-guidelines",
+    "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+    "tags": [],
+    "category": "general",
+    "version": "1.0.0",
+    "public": false,
+    "created": "2026-02-24",
+    "updated": "2026-02-24"
   }
 ]
