@@ -83,19 +83,6 @@
     "updated": "2026-02-24"
   },
   {
-    "slug": "algorithmic-art",
-    "filePath": "skills/algorithmic-art/SKILL.md",
-    "name": "algorithmic-art",
-    "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
-    "license": "Complete terms in LICENSE.txt",
-    "tags": [],
-    "category": "general",
-    "version": "1.0.0",
-    "public": false,
-    "created": "2026-02-27",
-    "updated": "2026-02-27"
-  },
-  {
     "slug": "docx",
     "filePath": "skills/docx/SKILL.md",
     "name": "docx",
@@ -139,6 +126,19 @@
     "filePath": "skills/mcp-builder-5/SKILL.md",
     "name": "mcp-builder-5",
     "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+    "license": "Complete terms in LICENSE.txt",
+    "tags": [],
+    "category": "general",
+    "version": "1.0.0",
+    "public": false,
+    "created": "2026-02-27",
+    "updated": "2026-02-27"
+  },
+  {
+    "slug": "algorithmic-art",
+    "filePath": "skills/algorithmic-art/SKILL.md",
+    "name": "algorithmic-art",
+    "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
     "license": "Complete terms in LICENSE.txt",
     "tags": [],
     "category": "general",
