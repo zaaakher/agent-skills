@@ -35,18 +35,6 @@
     "updated": "2026-02-24"
   },
   {
-    "slug": "frontend-design-1",
-    "filePath": "skills/frontend-design-1/SKILL.md",
-    "name": "frontend-design-1",
-    "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
-    "tags": [],
-    "category": "general",
-    "version": "1.0.0",
-    "public": false,
-    "created": "2026-02-24",
-    "updated": "2026-02-24"
-  },
-  {
     "slug": "ui-design",
     "filePath": "skills/ui-design/SKILL.md",
     "name": "ui-design",
@@ -160,5 +148,20 @@
     "created": "2026-02-27",
     "updated": "2026-02-27",
     "fileCount": 10
+  },
+  {
+    "slug": "frontend-design-1",
+    "filePath": "skills/frontend-design-1/SKILL.md",
+    "name": "frontend-design-1",
+    "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
+    "tags": [
+      "design"
+    ],
+    "category": "general",
+    "version": "1.0.0",
+    "public": false,
+    "created": "2026-02-24",
+    "updated": "2026-02-27",
+    "fileCount": 1
   }
 ]
