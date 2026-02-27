@@ -81,5 +81,18 @@
     "public": false,
     "created": "2026-02-24",
     "updated": "2026-02-24"
+  },
+  {
+    "slug": "algorithmic-art",
+    "filePath": "skills/algorithmic-art/SKILL.md",
+    "name": "algorithmic-art",
+    "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
+    "license": "Complete terms in LICENSE.txt",
+    "tags": [],
+    "category": "general",
+    "version": "1.0.0",
+    "public": false,
+    "created": "2026-02-27",
+    "updated": "2026-02-27"
   }
 ]
