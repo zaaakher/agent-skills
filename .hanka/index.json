@@ -207,5 +207,20 @@
     "created": "2026-03-03",
     "updated": "2026-03-03",
     "fileCount": 2
+  },
+  {
+    "slug": "shadcn-reg",
+    "filePath": "skills/shadcn-reg/SKILL.md",
+    "name": "shadcn-reg",
+    "description": "",
+    "tags": [
+      "test"
+    ],
+    "category": "general",
+    "version": "1.0.0",
+    "public": false,
+    "created": "2026-03-03",
+    "updated": "2026-03-03",
+    "fileCount": 1
   }
 ]
