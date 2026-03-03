@@ -179,21 +179,6 @@
     "fileCount": 10
   },
   {
-    "slug": "shadcn-2",
-    "filePath": "skills/shadcn-2/SKILL.md",
-    "name": "shadcn-2",
-    "description": "oijoij",
-    "tags": [
-      "shadn"
-    ],
-    "category": "general",
-    "version": "1.0.0",
-    "public": false,
-    "created": "2026-03-03",
-    "updated": "2026-03-03",
-    "fileCount": 2
-  },
-  {
     "slug": "shadcn-reg",
     "filePath": "skills/shadcn-reg/SKILL.md",
     "name": "shadcn-reg",
