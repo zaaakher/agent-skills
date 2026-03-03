@@ -177,5 +177,20 @@
     "created": "2026-02-27",
     "updated": "2026-02-27",
     "fileCount": 10
+  },
+  {
+    "slug": "shadcnui-custom-registry",
+    "filePath": "skills/shadcnui-custom-registry/SKILL.md",
+    "name": "shadcn/ui Custom Registry",
+    "description": "",
+    "tags": [
+      "shadcn"
+    ],
+    "category": "general",
+    "version": "1.0.0",
+    "public": false,
+    "created": "2026-03-03",
+    "updated": "2026-03-03",
+    "fileCount": 1
   }
 ]
