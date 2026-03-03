@@ -222,5 +222,18 @@
     "created": "2026-03-03",
     "updated": "2026-03-03",
     "fileCount": 1
+  },
+  {
+    "slug": "shadcn-reg-12",
+    "filePath": "skills/shadcn-reg-12/SKILL.md",
+    "name": "shadcn-reg-12",
+    "description": "Use this skill whenever the user wants to create, set up, or manage a custom shadcn/ui component registry. Triggers include: \"create a shadcn registry\", \"build a component registry\", \"publish my components with shadcn\", \"set up a custom registry\", or any request involving registry.json, npx shadcn build, hosting/sharing shadcn components, or adding components to a registry. Covers full project scaffolding, writing registry items of all types (ui, block, hook, lib, page, theme, file), building the JSON output, namespaces, authentication, and deployment guidance. Also use when the user wants to add a new component to an existing registry, troubleshoot registry install errors, or set up namespace-based installs. Do NOT use for general shadcn component usage, styling questions, or components.json configuration unrelated to running a registry.",
+    "tags": [],
+    "category": "general",
+    "version": "1.0.0",
+    "public": false,
+    "created": "2026-03-03",
+    "updated": "2026-03-03",
+    "fileCount": 1
   }
 ]
