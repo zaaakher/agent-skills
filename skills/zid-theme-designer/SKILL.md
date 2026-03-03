@@ -1,0 +1,334 @@
+---
+name: zid-theme-designer
+description: You're an expert in designing themes for Zid stores.
+metadata:
+  tags: []
+  category: general
+  version: 1.0.0
+  public: false
+  created: '2026-03-03'
+  updated: '2026-03-03'
+---
+All the documentation for designing Zid stores is in following:
+
+# Zid Docs
+
+## Docs
+- [🗂️ Overview](https://docs.zid.sa/zid-apps-overview.md): 
+- [🚀 Start Here](https://docs.zid.sa/start-here.md): 
+- [Create your First App](https://docs.zid.sa/create-first-app.md): 
+- [Responses](https://docs.zid.sa/responses.md): 
+- [Rate Limiting](https://docs.zid.sa/rate-limiting-644369m0.md): 
+- [Authorization](https://docs.zid.sa/authorization.md): 
+- [StoreFront Events](https://docs.zid.sa/storefront-events-649611m0.md): 
+- [Zid MUI](https://docs.zid.sa/zid-mui-1973669m0.md): 
+- Merchant APIs [Orders](https://docs.zid.sa/orders-1934403f0.md): 
+- Merchant APIs [Reverse Orders](https://docs.zid.sa/reverse-orders-1810994f0.md): 
+- Merchant APIs [Abandoned Carts](https://docs.zid.sa/abandoned-carts-3037527f0.md): 
+- Merchant APIs [Products](https://docs.zid.sa/products-1934287f0.md): 
+- Merchant APIs > Products [Managing Products](https://docs.zid.sa/managing-products-1810975f0.md): 
+- Merchant APIs > Products [Digital Vouchers](https://docs.zid.sa/digital-vouchers-1810993f0.md): 
+- Merchant APIs > Products [Product Categories](https://docs.zid.sa/product-categories-1810983f0.md): 
+- Merchant APIs > Products [Product Badge](https://docs.zid.sa/product-badge-1810992f0.md): 
+- Merchant APIs > Products [Product Attributes](https://docs.zid.sa/product-attributes-1810973f0.md): 
+- Merchant APIs > Products [Product Attribute Presets](https://docs.zid.sa/product-attribute-presets-1810974f0.md): 
+- Merchant APIs > Products [Product Variants](https://docs.zid.sa/product-variants-1810980f0.md): 
+- Merchant APIs > Products [Product Sorting](https://docs.zid.sa/product-sorting-1810978f0.md): 
+- Merchant APIs > Products [Product Images](https://docs.zid.sa/product-images-1810976f0.md): 
+- Merchant APIs > Products [Product Availability Notifications](https://docs.zid.sa/product-availability-notifications-1810996f0.md): 
+- Merchant APIs > Products [Product Export](https://docs.zid.sa/product-export-1810979f0.md): 
+- Merchant APIs > Products [Product Stock](https://docs.zid.sa/product-stock-1810977f0.md): 
+- Merchant APIs > Products [Product Questions & Answers](https://docs.zid.sa/product-questions-answers-1810995f0.md): 
+- Merchant APIs > Products [Product Reviews](https://docs.zid.sa/product-reviews-2179631f0.md): 
+- Merchant APIs > Products [Digital Products](https://docs.zid.sa/digital-products-2390702f0.md): 
+- Merchant APIs [Inventories](https://docs.zid.sa/inventories-1810981f0.md): 
+- Merchant APIs [Shipping](https://docs.zid.sa/shipping-1810986f0.md): 
+- Merchant APIs > Marketing [Coupons](https://docs.zid.sa/coupons-1810985f0.md): 
+- Merchant APIs > Marketing [Bundle Offers](https://docs.zid.sa/bundle-offers-1934530f0.md): 
+- Merchant APIs > Marketing [Loyalty Program](https://docs.zid.sa/loyalty-program-1810991f0.md): 
+- Merchant APIs [Customers](https://docs.zid.sa/customers-1810970f0.md): 
+- Merchant APIs [Store Settings](https://docs.zid.sa/store-settings-1810968f0.md): 
+- Merchant APIs > Store Settings [📄 User Roles and Permissions](https://docs.zid.sa/-user-roles-and-permissions-604944m0.md): 
+- Merchant APIs [Countries and Cities](https://docs.zid.sa/countries-and-cities-1810988f0.md): 
+- Webhooks [Overview](https://docs.zid.sa/webhooks.md): 
+- Webhooks > Events [Order](https://docs.zid.sa/webhook-events-order.md): 
+- Webhooks > Events [Product](https://docs.zid.sa/webhook-events-product.md): 
+- Webhooks > Events [Abandoned Cart](https://docs.zid.sa/webhook-events-abandoned-cart.md): 
+- Webhooks > Events [Customer](https://docs.zid.sa/webhook-events-customer.md): 
+- Webhooks > Events [Product Category](https://docs.zid.sa/webhook-events-product-category.md): 
+- App Management [Embedded Apps](https://docs.zid.sa/embedded-apps.md): 
+- App Management [Events](https://docs.zid.sa/events-878234m0.md): 
+- [Our custom MCP server](https://docs.zid.sa/our-custom-mcp-server-1363315m0.md): 
+- [Overview](https://docs.zid.sa/overview-1340225m0.md): 
+- [Merchant Activation](https://docs.zid.sa/merchant-activation.md): 
+- Payment [Overview](https://docs.zid.sa/overview-1340608m0.md): 
+- Payment [Embedded Payment](https://docs.zid.sa/embedded-payment-1030692m0.md): 
+- Payment [Gateway Error Codes](https://docs.zid.sa/gateway-error-codes-1042597m0.md): 
+- [ApplePay](https://docs.zid.sa/applepay-3801359f0.md): 
+- ApplePay [ApplePay Checkout](https://docs.zid.sa/applepay-checkout-1032876m0.md): 
+- Webhooks [Overview](https://docs.zid.sa/overview-1341008m0.md): 
+- Getting Started [Introduction](https://docs.zid.sa/introduction-1379314m0.md): 
+- Getting Started [Theme Development](https://docs.zid.sa/theme-development.md): 
+- Getting Started [🔁 Vitrin Changelog](https://docs.zid.sa/-vitrin-changelog-1769483m0.md): 
+- Getting Started [Creating and Managing Theme Presets](https://docs.zid.sa/creating-and-managing-theme-presets-1952548m0.md): 
+- Getting Started [Legacy Theme Migration](https://docs.zid.sa/legacy-theme-migration-4638089f0.md): 
+- Getting Started > Legacy Theme Migration [Store Settings Mapping](https://docs.zid.sa/store-settings-mapping-1379317m0.md): 
+- Getting Started > Legacy Theme Migration [Moving to Vitrin Using LLMs](https://docs.zid.sa/moving-to-vitrin-using-llms-1379318m0.md): 
+- Getting Started > Legacy Theme Migration [Twig to Jinja](https://docs.zid.sa/twig-to-jinja-1379319m0.md): 
+- Getting Started > Legacy Theme Migration [Breaking Changes](https://docs.zid.sa/breaking-changes-1379320m0.md): 
+- Key Concepts [Architecture](https://docs.zid.sa/architecture-1379322m0.md): 
+- Key Concepts [Theme Editor](https://docs.zid.sa/theme-editor-1702203m0.md): 
+- Key Concepts > Templates [Overview](https://docs.zid.sa/overview-1379323m0.md): 
+- Key Concepts > Templates [Overridable Templates](https://docs.zid.sa/overridable-templates-1650867m0.md): 
+- Key Concepts > Templates [Legacy Templates](https://docs.zid.sa/legacy-templates-1650876m0.md): 
+- Key Concepts > Templates [Template Replacements](https://docs.zid.sa/template-replacements-1938995m0.md): 
+- Key Concepts > Templates > Templates Library [home.jinja](https://docs.zid.sa/home-jinja-1914518m0.md): 
+- Key Concepts > Templates > Templates Library [product.jinja](https://docs.zid.sa/product-jinja-1914519m0.md): 
+- Key Concepts > Templates > Templates Library [cart.jinja](https://docs.zid.sa/cart-jinja-1914520m0.md): 
+- Key Concepts > Templates > Templates Library [category.jinja](https://docs.zid.sa/category-jinja-1914521m0.md): 
+- Key Concepts > Templates > Templates Library [products.jinja](https://docs.zid.sa/products-jinja-1914522m0.md): 
+- Key Concepts > Templates > Templates Library [categories.jinja](https://docs.zid.sa/categories-jinja-1914523m0.md): 
+- Key Concepts > Templates > Templates Library [page.jinja](https://docs.zid.sa/page-jinja-1914524m0.md): 
+- Key Concepts > Templates > Templates Library [blog.jinja](https://docs.zid.sa/blog-jinja-1914525m0.md): 
+- Key Concepts > Templates > Templates Library [faqs.jinja](https://docs.zid.sa/faqs-jinja-1914526m0.md): 
+- Key Concepts > Templates > Templates Library [reviews.jinja](https://docs.zid.sa/reviews-jinja-1914527m0.md): 
+- Key Concepts > Templates > Templates Library [questions.jinja](https://docs.zid.sa/questions-jinja-1914528m0.md): 
+- Key Concepts > Templates > Templates Library [shipping_payment.jinja](https://docs.zid.sa/shipping-payment-jinja-1914529m0.md): 
+- Key Concepts > Templates > Templates Library [404_not_found.jinja](https://docs.zid.sa/404-not-found-jinja-1914530m0.md): 
+- Key Concepts > Settings [Schema files](https://docs.zid.sa/schema-files-1702180m0.md): 
+- Key Concepts > Settings [Input Settings](https://docs.zid.sa/input-settings-1379345m0.md): 
+- Key Concepts > Settings [Media Settings](https://docs.zid.sa/media-settings-1379346m0.md): 
+- Key Concepts > Settings [Form Controls Settings](https://docs.zid.sa/form-controls-settings-1379347m0.md): 
+- Key Concepts > Settings [Products Settings](https://docs.zid.sa/products-settings-1379348m0.md): 
+- Key Concepts > Settings [Additional Settings](https://docs.zid.sa/additional-settings-1379349m0.md): 
+- Key Concepts > Settings [Conditional Visibility](https://docs.zid.sa/conditional-visibility-1379350m0.md): 
+- Key Concepts > Settings [Migrating twig settings schema](https://docs.zid.sa/migrating-twig-settings-schema-1379351m0.md): 
+- Key Concepts > Localization [localization (jinja v. twig)](https://docs.zid.sa/localization-jinja-v-twig-1379352m0.md): 
+- Building with Vitrin [Jinja Basics](https://docs.zid.sa/jinja-basics-1379353m0.md): 
+- Building with Vitrin [Vitrin's Jinja Extensions](https://docs.zid.sa/vitrins-jinja-extensions-1379354m0.md): 
+- Vitrin CLI [Introduction](https://docs.zid.sa/introduction-1379356m0.md): 
+- Vitrin CLI [CLI Commands](https://docs.zid.sa/cli-commands-1390556m0.md): 
+- Tips & Tricks [Performance](https://docs.zid.sa/performance-1379358m0.md): 
+- JS Integration [Supporting both Vitrin and Legacy themes](https://docs.zid.sa/supporting-both-vitrin-and-legacy-themes-1596866m0.md): 
+- JS Integration [Responses & Errors](https://docs.zid.sa/responses-errors-1572457m0.md): 
+- JS Integration [Cart](https://docs.zid.sa/cart-1475306m0.md): 
+- JS Integration [Products](https://docs.zid.sa/products-1475307m0.md): 
+- JS Integration [Categories](https://docs.zid.sa/categories-1578658m0.md): 
+- JS Integration [Store](https://docs.zid.sa/store-1578829m0.md): 
+- JS Integration [Account](https://docs.zid.sa/account-1579470m0.md): 
+- JS Integration [Blogs](https://docs.zid.sa/blogs-1597334m0.md): 
+- JS Integration [Options ](https://docs.zid.sa/options-1614165m0.md): 
+- JS Integration [Events](https://docs.zid.sa/events-1954903m0.md): 
+- Features [SDK Popups – Integration Guidelines](https://docs.zid.sa/sdk-popups-integration-guidelines-1946485m0.md): 
+- Features [Custom Styles Guide ](https://docs.zid.sa/custom-styles-guide-1702191m0.md): 
+- Features [Gift Card as a Popup](https://docs.zid.sa/gift-card-as-a-popup-1697835m0.md): 
+- Features [Addresses as a Popup](https://docs.zid.sa/addresses-as-a-popup-1706785m0.md): 
+- Features [Login as a Popup](https://docs.zid.sa/login-as-a-popup-1702155m0.md): 
+- Features [Checkout as a Popup](https://docs.zid.sa/checkout-as-a-popup-1806668m0.md): 
+- Features [Apple Pay Quick Checkout](https://docs.zid.sa/apple-pay-quick-checkout-1859764m0.md): 
+- Features [Region & Language Popup](https://docs.zid.sa/region-language-popup-1861342m0.md): 
+- Features [Dynamic bundle products](https://docs.zid.sa/dynamic-bundle-products-1893948m0.md): 
+- Mobile Apps [Scripts](https://docs.zid.sa/scripts-1758413m0.md): 
+
+## API Docs
+- Merchant APIs > Orders [Create Order](https://docs.zid.sa/create-order-20612055e0.md): This endpoint allows Partners to create orders on behalf of merchants, including products with required customizable fields. 
+- Merchant APIs > Orders [Change Order Status](https://docs.zid.sa/update-order-by-id.md): Please note that if the order is shipped through an integrated shipping company, then we cannot update the order status from "Ready" to "New".
+- Merchant APIs > Orders [Add Order Comment](https://docs.zid.sa/add-order-comment-17440706e0.md): The `Add Order Comment` API allows shipping and fulfilment partners to post real-time shipment updates directly to an order’s activity. 
+- Merchant APIs > Orders [View Order](https://docs.zid.sa/view-order-12479054e0.md): Get a specific order by ID. Optionally, when `source` is provided, the `previous_order` and `next_order` fields will be computed among only those orders whose source matches one of the values.
+- Merchant APIs > Orders [List Orders](https://docs.zid.sa/list-of-orders.md): Orders can be created either by the customers from the storefronts or by the merchants from their dashboard. 
+- Merchant APIs > Orders [List Custom Order Statuses](https://docs.zid.sa/list-custom-order-statuses-21565825e0.md): Fetch main order statuses with their custom sub-statuses for the authenticated manager’s store.
+- Merchant APIs > Orders [List Order Credit Notes](https://docs.zid.sa/get-order-credit-notes.md): The GET Credit Notes endpoint allows you to retrieve a list of credit notes associated with an order from the system. Credit notes are issued for orders that have been cancelled or modified, and this endpoint provides detailed information about each credit note, including customer details, product information, and payment details.
+- Merchant APIs > Reverse Orders [Create Reverse Orders](https://docs.zid.sa/create-reverse-orders.md): Creates an order reverse  request.
+- Merchant APIs > Reverse Orders [Create Reverse Orders Waybill](https://docs.zid.sa/create-reverse-orders-waybill.md): Creates a waybill for a reversed order.
+- Merchant APIs > Reverse Orders [Add Reverse Order Reasons](https://docs.zid.sa/add-reverse-order-reasons.md): Adds a new reverse order reason.
+- Merchant APIs > Reverse Orders [List Reverse Reasons](https://docs.zid.sa/reverse-order-reasons.md): Retrieves a list of order reverse reasons for the store.
+- Merchant APIs > Reverse Orders [Calculate Reverse Totals](https://docs.zid.sa/calculate-reverse-totals-27460874e0.md): Calculates the refund totals for a reverse order before creating the actual reverse order.
+- Merchant APIs > Reverse Orders [Create refund for reverse order](https://docs.zid.sa/create-refund-for-reverse-order-27460938e0.md): Creates a refund for an existing reverse order.
+- Merchant APIs > Reverse Orders [Upload bank transfer receipt](https://docs.zid.sa/upload-bank-transfer-receipt-27461116e0.md): Uploads a bank transfer receipt for a refund that was created using the
+- Merchant APIs > Reverse Orders [Update return products](https://docs.zid.sa/update-return-products-27461316e0.md): Updates the received status and condition quantities for products included in a reverse order.
+- Merchant APIs > Reverse Orders [Order Details – View for Return](https://docs.zid.sa/order-details-view-for-return-27774520e0.md): Retrieves order details formatted specifically for return processing.
+- Merchant APIs > Abandoned Carts [List Carts](https://docs.zid.sa/list-abandoned-carts.md): Retrieves a list of abandoned carts for a given store. 
+- Merchant APIs > Abandoned Carts [View Cart](https://docs.zid.sa/get-abandoned-cart-details.md): This endpoint fetches comprehensive details about an abandoned cart, identified
+- Merchant APIs > Products > Managing Products [List Products](https://docs.zid.sa/retrieve-a-list-of-products.md): **Retrieve a list of all products with extensive filtering options.**
+- Merchant APIs > Products > Managing Products [View Product](https://docs.zid.sa/get-a-product-by-id.md): Get product by ID as *Manager* or as *Customer*. 
+- Merchant APIs > Products > Managing Products [List Product Settings](https://docs.zid.sa/product-setting.md): The product setting endpoint allows merchants to retrieve the current product settings status from their dashboard. These settings control various aspects of how products are displayed, including search features, related products, and sold product counts. The endpoint helps merchants manage and fine-tune the visibility and order of products in their stores.
+- Merchant APIs > Products > Managing Products [Create Product](https://docs.zid.sa/create-a-new-product.md): Use this endpoint to create a new product, with optional support for **grouped products, product badges, and inline variant creation**.
+- Merchant APIs > Products > Managing Products [Update Product](https://docs.zid.sa/update-an-existing-product.md): This endpoint lets you modify an existing product. You can update various aspects of the product, including:
+- Merchant APIs > Products > Managing Products [Bulk Update Products](https://docs.zid.sa/bulk-update-product.md): This endpoint allows you to update multiple products at once by specifying their IDs or SKUs along with the new data. This makes managing large inventory updates more efficient.
+- Merchant APIs > Products > Managing Products [Delete Product](https://docs.zid.sa/delete-a-product.md): Delete a product by its ID.
+- Merchant APIs > Products > Digital Vouchers [List Vouchers](https://docs.zid.sa/product-vouchers.md): Retrieves all vouchers for a specified product.
+- Merchant APIs > Products > Digital Vouchers [Order Vouchers](https://docs.zid.sa/order-voucher.md): Retrieves the voucher details for a specified order.
+- Merchant APIs > Products > Digital Vouchers [Create Voucher](https://docs.zid.sa/add-product-voucher.md): Adds a new voucher for a specified product.
+- Merchant APIs > Products > Digital Vouchers [Import Vouchers](https://docs.zid.sa/import-vouchers.md): Imports multiple vouchers for a specified product from an Excel file.
+- Merchant APIs > Products > Digital Vouchers [Export Vouchers](https://docs.zid.sa/export-vouchers.md): Exports vouchers for a specified product to an Excel file.
+- Merchant APIs > Products > Digital Vouchers [Update Voucher](https://docs.zid.sa/update-product-voucher.md): Updates an existing voucher for a specified product.
+- Merchant APIs > Products > Digital Vouchers [Remove Voucher](https://docs.zid.sa/remove-product-voucher.md): Deletes a specified voucher for a product.
+- Merchant APIs > Products > Product Categories [List Categories](https://docs.zid.sa/get-all-categories.md): Fetches all the available categories for a certain store, including details such as their names, status, SEO information, and the number of products they contain. It supports returning both detailed and minimal category information depending on the request parameters.
+- Merchant APIs > Products > Product Categories [View Category](https://docs.zid.sa/get-single-category-details.md): Retrieves detailed information about a specific category, including its attributes, status, and associated products or subcategories, based on the provided category ID.
+- Merchant APIs > Products > Product Categories [Create Category](https://docs.zid.sa/create-store-category.md): Use this endpoint to add a new store category.
+- Merchant APIs > Products > Product Categories [Create Subcategory](https://docs.zid.sa/create-subcategory-20319945e0.md): Use this endpoint to add a new store Sub-category.
+- Merchant APIs > Products > Product Categories [Update Category](https://docs.zid.sa/update-a-store-category.md): Use this endpoint to update only one store category
+- Merchant APIs > Products > Product Categories [Assign Product to Category](https://docs.zid.sa/add-a-product-to-a-certain-category.md): Use this endpoint to add a new product to a certain category by specifying the product id and providing the category id in the request body.
+- Merchant APIs > Products > Product Categories [Bulk Assign Products to Category](https://docs.zid.sa/bulk-assign-products-to-category-24155519e0.md): Adds a product to one or more categories. Provide the product ID as a path parameter and the category ID(s) in the request body.
+- Merchant APIs > Products > Product Categories [Publish Category](https://docs.zid.sa/publish/unpublish-a-category.md): Use this endpoint to either publish or unpublish a certain category.
+- Merchant APIs > Products > Product Categories [Detach Category from All Products](https://docs.zid.sa/detach-category-from-all-products.md): Detach a specified category from all products in the store. This essentially 
+- Merchant APIs > Products > Product Categories [Remove Product from Category](https://docs.zid.sa/remove-category-from-product.md): This endpoint removes a specified category from a particular product. This action 
+- Merchant APIs > Products > Product Badge [List Badges](https://docs.zid.sa/product-badge.md): This endpoint retrieves a list of all predefined store badges available to the merchant.
+- Merchant APIs > Products > Product Attributes [List Attributes](https://docs.zid.sa/get-product-attributes.md): Use this endpoint to retrieve the Product Attributes of a certain store.
+- Merchant APIs > Products > Product Attributes [View Attribute](https://docs.zid.sa/retrieve-a-product-attribute.md): Use this endpoint to retrieve a specific product attribute using its id.
+- Merchant APIs > Products > Product Attributes [Create Attribute](https://docs.zid.sa/add-a-new-product-attribute.md): Add new product attributes for a certain Role.
+- Merchant APIs > Products > Product Attributes [Update Attribute](https://docs.zid.sa/update-a-product-attribute.md): Use to update the value of a single attribute for a certain Role.
+- Merchant APIs > Products > Product Attributes [Delete Attribute](https://docs.zid.sa/delete-a-product-attribute.md): Delete a certain ID using its id.
+- Merchant APIs > Products > Product Attribute Presets [List Presets](https://docs.zid.sa/get-attribute-presets.md): This endpoint retrieves all attribute presets, allowing users to quickly and easily add attributes in a specified language. It provides a list of available presets, each containing attribute values in both Arabic and English.
+- Merchant APIs > Products > Product Attribute Presets [Create Preset](https://docs.zid.sa/create-attribute-preset.md): Use this endpoint to add a new attribute preset, allowing for quick and easy creation of attributes with localized values in both Arabic and English.
+- Merchant APIs > Products > Product Attribute Presets [Update Preset](https://docs.zid.sa/update-attribute-preset.md): Use this endpoint to update an existing attribute preset by specifying both the preset ID and the attribute ID. The request allows you to update the preset values in different languages.
+- Merchant APIs > Products > Product Attribute Presets [Delete Preset](https://docs.zid.sa/delete-an-attribute-preset.md): Delete a defined attribute preset.
+- Merchant APIs > Products > Product Variants [Create Variants](https://docs.zid.sa/add-product-variants.md): This endpoint allows adding or creating variants for a given product. If the specified product is a standalone product (does not have any variants), this operation will convert it into a parent product.
+- Merchant APIs > Products > Product Variants [Create Custom Options](https://docs.zid.sa/insert-custom-options-to-a-product.md): Adds custom options to a product, allowing customers to choose from a predefined set of options while making a purchase. Custom options can be used to offer choices such as gift wrapping, warranty options, or other additional services.
+- Merchant APIs > Products > Product Variants [Update Custom Option](https://docs.zid.sa/update-custom-option-28843617e0.md): Updates an existing custom option field. This endpoint will replace the old data with the new data passed in the payload of this endpoint request.
+- Merchant APIs > Products > Product Variants [Delete Custom Option Field](https://docs.zid.sa/delete-custom-option-field-28840140e0.md): 
+- Merchant APIs > Products > Product Variants [Create Custom Fields](https://docs.zid.sa/insert-custom-user-input-fields-to-a-product.md): Adds custom user-input fields to a product, allowing customers to provide additional information while making a purchase. Custom user input fields can be used to collect data such as personalization details, gift messages, or special instructions.
+- Merchant APIs > Products > Product Sorting [Set Manual Product Order](https://docs.zid.sa/set-custom-product-order.md): Sets a custom ordering of products by accepting an ordered list of product IDs. This manual sorting can also be applied to a specific category when the category ID is passed in the body.
+- Merchant APIs > Products > Product Sorting [Reset Manual Product Order](https://docs.zid.sa/reset-manual-sorting-of-all-products.md): Delete any manual sorting that was done on any of the store products.
+- Merchant APIs > Products > Product Images [List Images](https://docs.zid.sa/get-list-of-images-of-a-product.md): Retrieve a list with all images available for a certain product using product id.
+- Merchant APIs > Products > Product Images [Upload Image](https://docs.zid.sa/add-image-to-a-product.md): Use this endpoint to add a single image to a product.
+- Merchant APIs > Products > Product Images [Update Image Order](https://docs.zid.sa/update-a-product-image-order.md): use this endpoint to reorder an image's appearance for a product.
+- Merchant APIs > Products > Product Images [Delete Image](https://docs.zid.sa/delete-a-product-image.md): Delete a specific product image by using the image id and product id.
+- Merchant APIs > Products > Product Availability Notifications [Notification Stats](https://docs.zid.sa/availability-notification-stats.md): Retrieve statistics on availability notifications.
+- Merchant APIs > Products > Product Availability Notifications [Noticiation Settings](https://docs.zid.sa/availability-notifications-settings.md): Retrieve current settings for availability notifications.
+- Merchant APIs > Products > Product Availability Notifications [List Notifications](https://docs.zid.sa/list-availability-notifications.md): Retrieve a list of availability notifications.
+- Merchant APIs > Products > Product Availability Notifications [Create Notification](https://docs.zid.sa/add-availability-notification.md): Sign up to receive a notification by email when the specified product becomes available again in the store.
+- Merchant APIs > Products > Product Availability Notifications [Update Settings](https://docs.zid.sa/save-availability-notifications-settings.md): Save settings for availability notifications.
+- Merchant APIs > Products > Product Availability Notifications [Send Notification Email](https://docs.zid.sa/manually-send-availability-notification-email.md): Manually send an availability notification email.
+- Merchant APIs > Products > Product Availability Notifications [Export Notifications](https://docs.zid.sa/export-availability-notifications.md): Export availability notifications data.
+- Merchant APIs > Products > Product Export [Email All Products to Store Owner](https://docs.zid.sa/email-all-products-to-store-owner.md): Sends an email to the store owner containing all the store's products in CSV format.
+- Merchant APIs > Products > Product Export [Import Products via CSV or xlsx File](https://docs.zid.sa/import-products-via-csv/xlsx-file.md): Imports products to the store using a CSV or xlsx file. The endpoint accepts a file, a Dropbox folder link for images, and an optional `delete_old_products` parameter to delete all previous store products upon successful import.
+- Merchant APIs > Products > Product Stock [Retrieve Product Stock](https://docs.zid.sa/get-product-stock-by-id.md): Retrieve specific product stock data by its unique ID.
+- Merchant APIs > Products > Product Stock [List Product Stock Records](https://docs.zid.sa/list-product-stocks.md): Retrieve a list of all product stocks for a specific product.
+- Merchant APIs > Products > Product Stock [Create Product Stock](https://docs.zid.sa/add-product-stock.md): Add a new product stock for a specific product.
+- Merchant APIs > Products > Product Stock [Update Product Stock](https://docs.zid.sa/update-single-product-stock.md): Update a single product stock by its unique ID. It is not recommended when handling lots of stocks.
+- Merchant APIs > Products > Product Stock [Bulk Update Product Stock Records](https://docs.zid.sa/bulk-update-product-stocks.md): Bulk update product stocks through locations. It is recommended when updating multiple stocks.
+- Merchant APIs > Products > Product Questions & Answers [Retrieve Product Question](https://docs.zid.sa/get-questions.md): Retrieve details of a specific question for a product.
+- Merchant APIs > Products > Product Questions & Answers [Retrieve Product Answer](https://docs.zid.sa/get-answer.md): Retrieve details of a specific answer to a question.
+- Merchant APIs > Products > Product Questions & Answers [List Product Questions](https://docs.zid.sa/get-all-questions.md): Retrieve a list of all questions for a product.
+- Merchant APIs > Products > Product Questions & Answers [List Answers for Question](https://docs.zid.sa/list-question-answers.md): Retrieve a list of all answers for a specific question of a product.
+- Merchant APIs > Products > Product Questions & Answers [Create Product Question](https://docs.zid.sa/create-question.md): Create a new question for a specified product.
+- Merchant APIs > Products > Product Questions & Answers [Create Product Answer](https://docs.zid.sa/create-answer.md): Create a new answer for a specific question of a product.
+- Merchant APIs > Products > Product Questions & Answers [Update Product Question](https://docs.zid.sa/update-question.md): Update details of a specific question for a product.
+- Merchant APIs > Products > Product Questions & Answers [Update Product Answer](https://docs.zid.sa/update-answer.md): Update details of a specific answer to a question.
+- Merchant APIs > Products > Product Questions & Answers [Delete Product Question](https://docs.zid.sa/delete-question.md): Delete a specific question for a product.
+- Merchant APIs > Products > Product Questions & Answers [Delete Product Answer](https://docs.zid.sa/delete-answer.md): Delete a specific answer for a question.
+- Merchant APIs > Products > Product Reviews [List Reviews](https://docs.zid.sa/list-reviews-10488550e0.md): Retrieves a list of customer reviews for a specified product within a store. Use this endpoint to fetch all available reviews based on the `PRODUCT_ID` and `STORE_ID`.
+- Merchant APIs > Products > Product Reviews [Count Reviews](https://docs.zid.sa/new-reviews-total.md): This API endpoint retrieves the total number of new reviews. It allows you to filter the results based on specific query parameters like search terms, date ranges, or customer IDs.
+- Merchant APIs > Products > Digital Products [Create Downloadable Product](https://docs.zid.sa/create-downloadable-product-11395331e0.md): Here’s the updated description with the additional clarification:
+- Merchant APIs > Products > Digital Products [Generate Upload URL](https://docs.zid.sa/generate-upload-url-11396021e0.md): The "Generate an Upload URL" endpoint allows users to generate a pre-signed URL for uploading a digital file directly to cloud storage. This URL enables secure, temporary access for uploading files associated with a digital product.
+- Merchant APIs > Products > Digital Products [Upload File to S3](https://docs.zid.sa/upload-file-to-s3-11396102e0.md): The "Upload File to S3" endpoint provides a pre-signed URL for secure, temporary access to upload files directly to Amazon S3 storage. This enables clients to upload files without needing direct S3 credentials, ensuring secure and efficient file handling for digital assets.
+- Merchant APIs > Products > Digital Products [Create Product Downloadable](https://docs.zid.sa/create-product-downloadable-11447610e0.md): This endpoint creates downloadable content for a digital product, associating a file with the specified product. The download link is generated and returned, allowing users to access or download the content directly. The response provides information on the uploaded file, including its metadata, access link, and display details.
+- Merchant APIs > Products > Digital Products [Get Product Downloadables](https://docs.zid.sa/get-product-downloadables-11448025e0.md): This endpoint retrieves a list of downloadable files associated with a specific product, providing details about each downloadable file, including access URLs, display names, and status. The response includes pagination information and metadata about the files, allowing the client to manage multiple files for a product.
+- Merchant APIs > Products > Digital Products [Delete Product Downloadable](https://docs.zid.sa/delete-product-downloadable-11448608e0.md): This endpoint deletes a specific downloadable file associated with a product. Upon successful deletion, the response returns the details of the deleted file, confirming the operation. This response helps the client verify the removal of the file and provides relevant metadata for record-keeping.
+- Merchant APIs > Products > Digital Products [List Store Downloadables](https://docs.zid.sa/list-store-downloadables-11768448e0.md): This endpoint retrieves a list of downloadable files associated with a specific store. It supports searching by file name and ordering the results by file size or creation date. The response provides details about each downloadable file, including its ID, name, file size, and associated store.
+- Merchant APIs > Products > Digital Products [Create Store Downloadable](https://docs.zid.sa/create-store-downloadable-11830245e0.md): This endpoint allows the creation of downloadable files associated with a specific store. The client uploads a file, and the endpoint returns details about the newly created downloadable item, including its identifier, file name, and size.
+- Merchant APIs > Products > Digital Products [Delete Store Downloadable](https://docs.zid.sa/delete-store-downloadable-11830637e0.md): This endpoint deletes a specific downloadable file associated with a store. It requires the unique ID of the downloadable file to be specified in the URL. Upon successful deletion, the server responds with an HTTP status code indicating the operation's success.
+- Merchant APIs > Inventories [Create Location](https://docs.zid.sa/add-a-new-location.md): Adds a new location to the store.
+- Merchant APIs > Inventories [Update Location](https://docs.zid.sa/update-a-location-by-id.md): Updates the details of a specified location.
+- Merchant APIs > Inventories [Update Product Stock for Location](https://docs.zid.sa/update-product-stock-for-location-14477202e0.md): This endpoint allows store managers to update stock quantities for products at a specific location. Managers can specify the available quantity and whether the stock is infinite or limited.
+- Merchant APIs > Inventories [List Locations](https://docs.zid.sa/list-store-locations.md): Returns a list of all store locations.
+- Merchant APIs > Inventories [View Location](https://docs.zid.sa/get-store-location-by-id.md): Retrieves details about a specified location.
+- Merchant APIs > Shipping [List Store Shipping Methods](https://docs.zid.sa/list-store-delivery-options.md): This endpoint provides the list of all delivery options configured for the store,  including custom shipping names, associated cities, and status of each shipping method.  It's useful for managing delivery settings and understanding available shipping methods.
+- Merchant APIs > Marketing > Coupons [List Coupons](https://docs.zid.sa/list-coupons-13955120e0.md): Retrieves a list of all available coupons from the system. The response includes active, inactive, and expired coupons along with relevant metadata such as store details, discount type, and validity period.
+- Merchant APIs > Marketing > Coupons [View Coupon](https://docs.zid.sa/view-coupon-13955212e0.md): Fetches detailed information about a specific coupon using its unique coupon_id. This endpoint provides all attributes of a coupon, including usage statistics, conditions, and status.
+- Merchant APIs > Marketing > Coupons [Create Coupon](https://docs.zid.sa/create-a-new-coupon.md): Create a new coupon with various options such as discount type, validity period, usage limits, and application conditions.
+- Merchant APIs > Marketing > Coupons [Update Coupon](https://docs.zid.sa/update-coupon-13940921e0.md): This endpoint allows merchants to update details of an existing coupon. Merchants can modify attributes such as discount value, expiration date, and usage limits.
+- Merchant APIs > Marketing > Coupons [Delete Coupon](https://docs.zid.sa/delete-coupon-13941160e0.md): This endpoint allows merchants to delete an existing coupon. Once deleted, the coupon will no longer be valid for any transactions.
+- Merchant APIs > Marketing > Bundle Offers [List Bundle Offers](https://docs.zid.sa/retrieve-all-bundle-offers.md): This endpoint retrieves all available bundle offers for the store. Bundle offers are special promotions where customers can get a discount if they buy a specific bundle of products.
+- Merchant APIs > Marketing > Loyalty Program [Loyalty Program Status](https://docs.zid.sa/loyalty-status.md): Retrieves information about the overall status (active/inactive) of a store's loyalty program.
+- Merchant APIs > Marketing > Loyalty Program [Loyalty Program Details](https://docs.zid.sa/list-data.md): Retrieves list data relevant to the loyalty program configuration.
+- Merchant APIs > Marketing > Loyalty Program [Loyalty Program Info](https://docs.zid.sa/info-page-managers.md): Retrieves information about the store's loyalty program info page content.
+- Merchant APIs > Marketing > Loyalty Program [Customer Loyalty Summary](https://docs.zid.sa/show-loyalty-points-infor-for-specific-customer.md): Retrieves detailed information about a specific customer's loyalty points, including balance and transaction history.
+- Merchant APIs > Marketing > Loyalty Program [Customer Points History](https://docs.zid.sa/customer-points-history.md): Retrieves the transaction history of a specific customer's loyalty points activity.
+- Merchant APIs > Marketing > Loyalty Program [Activate Loyalty Program](https://docs.zid.sa/loyalty-program-activation.md): Activates a loyalty program for a store.
+- Merchant APIs > Marketing > Loyalty Program [Set Points Expiration Rules](https://docs.zid.sa/set-points-expiration.md): Sets the expiration period for loyalty points within a store's program.
+- Merchant APIs > Marketing > Loyalty Program [Update Cashback Rule](https://docs.zid.sa/cashback-rule-method-update.md): Updates the configuration of a cashback rule within a store's loyalty program.
+- Merchant APIs > Marketing > Loyalty Program [Create Points Redemption Method](https://docs.zid.sa/add-points-redemption-method.md): Creates a new redemption method (e.g., gift certificate) for a store's loyalty program.
+- Merchant APIs > Marketing > Loyalty Program [Update Points Redemption Method](https://docs.zid.sa/update-points-redemption-method.md): Updates the details of an existing redemption method within a store's loyalty program.
+- Merchant APIs > Marketing > Loyalty Program [Delete Points Redemption Method](https://docs.zid.sa/delete-points-redemption-method.md): Deletes a specific redemption method from a store's loyalty program.
+- Merchant APIs > Marketing > Loyalty Program [Adjust Customer Points](https://docs.zid.sa/adjust-customer-points.md): Allows manual adjustments to a customer's loyalty points balance.
+- Merchant APIs > Customers [List Customers](https://docs.zid.sa/list-of-customers.md): This endpoint will return a list of the store customers along with other metadata such as the total number of customers and the total number of orders for each customer.
+- Merchant APIs > Customers [View Customer](https://docs.zid.sa/get-customer-by-id.md): This endpoint retrieves the details of a certain customer using the Customer's ID.
+- Merchant APIs > Store Settings [Retrieve Store Manager Profile](https://docs.zid.sa/get-manager-profile.md): Retrieves the profile data of the authenticated Manager. This includes detailed information about the Manager, their role, associated store, and the set of permissions they hold. 
+- Merchant APIs > Store Settings [Retrieve VAT Settings](https://docs.zid.sa/get-vat-settings.md): Return a list of the VAT settings configured on this store. For example, to indicate whether the store VAT is applied on shipping fees or not.
+- Merchant APIs > Store Settings [List Payment Methods](https://docs.zid.sa/list-of-payment-method.md): 
+- Merchant APIs > Store Settings [List Store Operating Countries](https://docs.zid.sa/retrieve-store-operating-countries.md): Retrieve a list of countries where the store operates. This list includes the country's unique ID, name, ISO codes, and flag image URL.
+- Merchant APIs > Countries and Cities [List Countries](https://docs.zid.sa/countries-list.md): The endpoint returns all countries' names, codes, and IDs, and is not specific to any particular store's operations or merchant's activated countries.
+- Merchant APIs > Countries and Cities [List Cities for Country](https://docs.zid.sa/retrieve-cities-by-country-id.md): Retrieve a list of cities for a specific country where the store operates or delivers. The list includes each city's unique ID, name, and country details. Note that a city can be labeled as 'Other', represented by an 'أخرى' or 'Other' in the 'name' field, which typically signifies a location outside of the predefined list of cities.
+- Webhooks > APIs [List Webhooks](https://docs.zid.sa/list-of-webhooks.md): Webhooks allow you to receive real-time data updates about various events. 
+- Webhooks > APIs [Create Webhook](https://docs.zid.sa/create-a-webhook.md): 
+- Webhooks > APIs [Delete Webhook](https://docs.zid.sa/delete-a-webhook-by-original-id.md): This endpoint allows you to delete a specific webhook using originalID . The original ID refers to the unique identifier assigned by the user upon creation.
+- Webhooks > APIs [Delete Webhook By subscriber](https://docs.zid.sa/delete-a-webhook-by-subscriber.md): This endpoint allows you to delete all the webhooks associated with a subscriberID. The subscriberID refers to the unique identifier assigned to the user upon creation.
+- App Management > APIs [Subscription Details](https://docs.zid.sa/subscription-details-13896876e0.md): This endpoint enables app partners to fetch details about a merchant's app subscription, including plan, status, and billing information.
+- App Management > APIs [Update Usage-Based Charges](https://docs.zid.sa/update-usage-based-charges-13896680e0.md): This endpoint allows app partners to update the outstanding balance for their app's usage-based plan, ensuring flexible billing adjustments to align with merchants' pay-as-you-go consumption. 
+- Payment [Direct Payment](https://docs.zid.sa/direct-payment-17957496e0.md): This is the endpoint where the card information will be shared and a session is initiated. This request will be sent from the client side directly in the checkout and will not pass through ZidPay backend nor any data will be saved.
+- Payment [Execute Payment Request](https://docs.zid.sa/execute-payment-request-17112105e0.md): This is the request that is going to be sent from Zid Payments to you as a payment provider for creating / executing payments.
+- Payment [Get payment status](https://docs.zid.sa/get-payment-status-17286396e0.md): After receiving a callback or a webhook for a payment success ZidPay system will send a payment status / details request to payment provider; to verify the payment status.
+- ApplePay [Register ApplePay Domain](https://docs.zid.sa/register-applepay-domain-17111260e0.md): This endpoint is required for registering a merchant domain with Apple. 
+- ApplePay [Providing Merchant Validation](https://docs.zid.sa/providing-merchant-validation-17111709e0.md): When the merchant validation event is triggered from the Apple Pay JS library, a request to the provider will be needed to obtain the merchant session object that is needed to validate the merchant session. The provider API in turn shall call Apple endpoint “startSession” to get an apple session and return it. 
+- Refund [Request Refund](https://docs.zid.sa/request-refund-17286541e0.md): When a refund is requested from a customer the following request will be sent to the payment provider from Zid Payments. After processing the refund, we expect refund Id and refund reference to be returned back in the response. Also, a webhook shall be sent to notify Zid Payments with success or failure result.  
+- Webhooks [Link Merchant Event](https://docs.zid.sa/link-merchant-event-17956108e0.md): This event is used to link the merchant to the Open APIs partner through Zid Payments, allowing them to start accepting online payments on their Zid store.
+- Webhooks [Payment Paid Event](https://docs.zid.sa/payment-paid-event-17956148e0.md): The "Payment Paid Event" is used to notify Zid Payments system of any updates regarding the status of a payment, whether it is successful or failed. This ensures that Zid Payments is informed about the payment status and can update its records accordingly.
+- Webhooks [Refund Event](https://docs.zid.sa/refund-event-17956149e0.md): Once a refund request is processed, the status success / failure needs to be communicated with Zid Payments system through this webhook endpoint.
+- API's > Authentication [Logout](https://docs.zid.sa/logout-25508912e0.md): Logs out the currently authenticated user by invalidating their active session or access token. This endpoint should be called when a user explicitly signs out of the application.
+- API's > Products [List Products](https://docs.zid.sa/list-products-25510175e0.md): Retrieves a paginated list of products with support for searching, sorting, and filtering by category, price, attributes, and sale status. This endpoint is commonly used to power product listing pages, search results, and category views.
+- API's > Products [Search Products](https://docs.zid.sa/search-products-25720449e0.md): Searches for products using a free-text query with support for pagination, sorting, and advanced filters such as category, price range, sale status, and attribute values.
+- API's > Products [Calculate Product Options Price](https://docs.zid.sa/calculate-product-options-price-25720485e0.md): Provides a quick and lightweight way to calculate a product’s variant price and/or extra option prices based on the options selected on the product page.
+- API's > Products [Notify Product Stock Availability](https://docs.zid.sa/notify-product-stock-availability-25721229e0.md): Registers a customer request to be notified when a product becomes available in stock.
+- API's > Products [Fetch Bundle Offers](https://docs.zid.sa/fetch-bundle-offers-25721848e0.md): Retrieves bundle offers that are applicable to a given set of products.
+- API's > Products [Fetch Bundle Offers for a Product](https://docs.zid.sa/fetch-bundle-offers-for-a-product-25721877e0.md): Retrieves all bundle offers associated with a specific product.
+- API's > Products [List My Product Reviews](https://docs.zid.sa/list-my-product-reviews-25721999e0.md): Retrieves the current authenticated customer’s reviews for one or more products.
+- API's > Products [List Product Reviews](https://docs.zid.sa/list-product-reviews-25768213e0.md): Retrieves a paginated list of customer reviews for a specific product.
+- API's > Products [Create Product Review](https://docs.zid.sa/create-product-review-25768452e0.md): Creates a new review for a specific product, optionally including a comment, images, anonymity preference, and an associated order.
+- API's > Products [Update Product Review](https://docs.zid.sa/update-product-review-25768971e0.md): Updates an existing product review submitted by the authenticated customer.
+- API's > Products [Delete Product Review](https://docs.zid.sa/delete-product-review-25770739e0.md): Deletes an existing product review submitted by the authenticated customer.
+- API's > Products [List Product Questions](https://docs.zid.sa/list-product-questions-25771715e0.md): Retrieves a paginated list of customer questions submitted for a specific product.
+- API's > Products [Create Product Question](https://docs.zid.sa/create-product-question-25772112e0.md): Creates a new customer question for a specific product.
+- API's > Products [Get Product by Slug](https://docs.zid.sa/get-product-by-slug-25772175e0.md): Retrieves detailed product information using the product’s slug instead of its ID.
+- API's > Products [Get Selection Groups](https://docs.zid.sa/get-selection-groups-25773150e0.md): Retrieves selection groups configured for a specific product.
+- API's > Categories [List Categories](https://docs.zid.sa/list-categories-26082032e0.md): Retrieves a list of all available product categories.
+- API's > Checkout [Get Cart](https://docs.zid.sa/get-cart-26082659e0.md): Retrieves the current shopping cart associated with the active session or authenticated customer.
+- API's > Checkout [Remove Cart](https://docs.zid.sa/remove-cart-26082674e0.md): Deletes the current shopping cart, clearing all products, discounts, and checkout state associated with the active session or authenticated customer.
+- API's > Checkout [Duplicate Cart](https://docs.zid.sa/duplicate-cart-26083625e0.md): Creates a new cart by duplicating the current reserved cart.
+- API's > Checkout [Add Cart Item](https://docs.zid.sa/add-cart-item-26083895e0.md): Adds a new item to the current shopping cart.
+- API's > Checkout [Empty Cart](https://docs.zid.sa/empty-cart-26084007e0.md): Removes all items from the current shopping cart while keeping the cart itself active.
+- API's > Checkout [Update Cart Item](https://docs.zid.sa/update-cart-item-26084102e0.md): Updates the quantity of an existing item in the current shopping cart.
+- API's > Checkout [Remove Cart Item](https://docs.zid.sa/remove-cart-item-26084145e0.md): Removes a single item from the current shopping cart.
+- API's > Checkout [Upload Cart Input Field](https://docs.zid.sa/upload-cart-input-field-26084442e0.md): Uploads a file input used by cart items (e.g., image uploads, documents, or custom input attachments).
+- API's > Checkout [Add Gift Card](https://docs.zid.sa/add-gift-card-26257599e0.md): Adds a gift card to the current shopping cart, including recipient details, optional message, and card design (URL-based or uploaded file).
+- API's > Checkout [Remove Gift Card](https://docs.zid.sa/remove-gift-card-26257693e0.md): Removes the gift card item from the current shopping cart.
+- API's > Checkout [Apply Coupon](https://docs.zid.sa/apply-coupon-26257791e0.md): Applies a coupon code to the current shopping cart and recalculates discounts, totals, and applicable rules.
+- API's > Checkout [Remove Coupon From Cart](https://docs.zid.sa/remove-coupon-from-cart-26257892e0.md): Removes the currently applied coupon from the shopping cart and recalculates totals and discounts.
+- API's > Checkout [Check Coupon Validity](https://docs.zid.sa/check-coupon-validity-26323357e0.md): Checks whether a coupon code is valid for the current cart without applying it.
+- API's > Checkout [Apply Loyalty Points](https://docs.zid.sa/apply-loyalty-points-26323433e0.md): Applies loyalty point redemption methods to the current shopping cart and recalculates cart totals accordingly.
+- API's > Checkout [Remove Loyalty Points](https://docs.zid.sa/remove-loyalty-points-26323569e0.md): Removes all applied loyalty point redemptions from the current shopping cart and recalculates cart totals accordingly.
+- API's > Checkout [Preview Rewarded Points](https://docs.zid.sa/preview-rewarded-points-26324000e0.md): Calculates and previews the loyalty points that will be rewarded for a given cart total without modifying the cart.
+- API's > Checkout [List Redemption Methods for Cart](https://docs.zid.sa/list-redemption-methods-for-cart-26324082e0.md): Retrieves the list of available loyalty redemption methods that can be applied to the current shopping cart.
+- API's > Checkout [Customer’s Loyalty Wallet](https://docs.zid.sa/customers-loyalty-wallet-26324157e0.md): Retrieves loyalty wallet information for the current customer, including balances and wallet activity, in a paginated format.
+- API's > Checkout [Customer’s Current Points Balance](https://docs.zid.sa/customers-current-points-balance-26324317e0.md): Retrieves the current loyalty points balance for the authenticated customer.
+- API's > Account [Get Profile](https://docs.zid.sa/get-profile-26363082e0.md): Retrieves the profile information of the currently authenticated customer.
+- API's > Account [Delete Account](https://docs.zid.sa/delete-account-26363588e0.md): Permanently deletes the currently authenticated customer account.
+- API's > Account [Update Customer Profile](https://docs.zid.sa/update-customer-profile-26364098e0.md): Updates the profile information of the currently authenticated customer.
+- API's > Account [Get Addresses](https://docs.zid.sa/get-addresses-26572297e0.md): Retrieves the list of saved addresses associated with the currently authenticated customer.
+- API's > Account [Create an Address](https://docs.zid.sa/create-an-address-26572341e0.md): Creates a new customer address and optionally sets it as the shipping address for the current cart/session.
+- API's > Account [Get an Address by ID](https://docs.zid.sa/get-an-address-by-id-26572450e0.md): Retrieves a specific saved address belonging to the currently authenticated customer using its address ID.
+- API's > Account [Update an Existing Address](https://docs.zid.sa/update-an-existing-address-26572838e0.md): Updates an existing saved address belonging to the currently authenticated customer.
+- API's > Account [Delete Address](https://docs.zid.sa/delete-address-26572970e0.md): Deletes a saved customer address belonging to the currently authenticated customer.
+- API's > Account [Get Orders](https://docs.zid.sa/get-orders-26722142e0.md): Retrieves a paginated list of orders placed by the currently authenticated customer.
+- API's > Account [Get Shareable Wishlist Link](https://docs.zid.sa/get-shareable-wishlist-link-26722749e0.md): Generates and returns a shareable link for the customer’s wishlist.
+- API's > Account [Get Wishlist](https://docs.zid.sa/get-wishlist-26722764e0.md): Retrieves a paginated list of wishlist items for the customer.
+- API's > Account [Add Products to Wishlist](https://docs.zid.sa/add-products-to-wishlist-26722924e0.md): Adds one or more products to the currently authenticated customer’s wishlist.
+- API's > Account [Remove Product from Wishlist](https://docs.zid.sa/remove-product-from-wishlist-26761295e0.md): Removes a specific product from the currently authenticated customer’s wishlist.
+- API's > Account [Get Address Form Schema](https://docs.zid.sa/get-address-form-schema-26761547e0.md): Retrieves the dynamic address form schema based on the provided country code.
+- API's > Account [Check Product Purchase Status](https://docs.zid.sa/check-product-purchase-status-26761806e0.md): Checks whether the currently authenticated customer has previously purchased a specific product.
+- API's > Storefront [Store Scripts](https://docs.zid.sa/store-scripts-26360853e0.md): Retrieves storefront scripts configured for the store.
+- API's > Storefront [Pages](https://docs.zid.sa/pages-26361426e0.md): Retrieves the content of a storefront page using its slug.
+- API's > Storefront [Blogs](https://docs.zid.sa/blogs-26361790e0.md): Retrieves a blog post from the storefront using its slug.
+- API's > Countries [Get Countries](https://docs.zid.sa/get-countries-26361856e0.md): Retrieves the list of supported countries available in the storefront.
+- API's > Countries [Get Cities By Country](https://docs.zid.sa/get-cities-by-country-26362508e0.md): Retrieves the list of cities associated with a specific country.
