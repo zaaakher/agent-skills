@@ -123,5 +123,18 @@
     "created": "2026-03-03",
     "updated": "2026-03-03",
     "fileCount": 1
+  },
+  {
+    "slug": "zid-theme-designer",
+    "filePath": "skills/zid-theme-designer/SKILL.md",
+    "name": "zid-theme-designer",
+    "description": "You're an expert in designing themes for Zid stores.",
+    "tags": [],
+    "category": "general",
+    "version": "1.0.0",
+    "public": false,
+    "created": "2026-03-03",
+    "updated": "2026-03-03",
+    "fileCount": 1
   }
 ]
