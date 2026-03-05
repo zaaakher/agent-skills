@@ -1,0 +1,77 @@
+{
+  "skill_name": "amazon-payment-services",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to integrate Amazon Payment Services into my e-commerce website. What's the fastest way to get started accepting payments?",
+      "expected_output": "Should recommend Hosted Checkout integration as the fastest option, explain the setup steps including obtaining credentials, and provide a sample implementation with the correct sandbox endpoint URL.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "How do I calculate the signature for APS API requests? I have SHA Request Phrase 'MySecretKey123' and need to sign a PURCHASE request.",
+      "expected_output": "Should explain the 5-step signature calculation process (collect, sort, concatenate, wrap, hash) and provide a working code example in Python or another language showing the correct implementation.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I'm getting error code 00008 when trying to process payments. What does this mean and how do I fix it?",
+      "expected_output": "Should identify error 00008 as 'Signature mismatch', explain possible causes (incorrect SHA phrase, wrong signature calculation, parameter ordering issues), and provide troubleshooting steps.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Can you show me how to implement recurring payments for a subscription service using APS?",
+      "expected_output": "Should explain the recurring payment flow including initial payment to get token_name and agreement_id, then subsequent charges using eci='RECURRING', with complete JSON request examples.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "What's the difference between Non-PCI and PCI Custom Integration? Which one should I use for my startup?",
+      "expected_output": "Should explain both approaches, highlight that Non-PCI uses tokenization (card data never touches server) while PCI requires Level 1 compliance, and recommend Non-PCI for most startups due to reduced compliance burden.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "I need to refund a customer's payment. The original order was for 500 AED but I only want to refund 200 AED. How do I do a partial refund?",
+      "expected_output": "Should provide the REFUND API request format with amount as 20000 (AED × 100), explain that partial refunds are supported, and note that the merchant_reference must match the original transaction.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "How can I allow customers to save their card details for faster checkout next time?",
+      "expected_output": "Should explain the Save Card service using tokenization with remember_me='YES', how to store the token_name, and how to use it for future payments (customer only needs to enter CVV).",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "I'm integrating KNET payments for Kuwait. What special considerations do I need to know about?",
+      "expected_output": "Should explain that KNET requires PURCHASE command (not AUTHORIZATION), is available via Hosted Checkout and Payment Links, uses KWD currency (×1000 for amount), and has max 1 retry attempt.",
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "My authorization was successful but I haven't captured the payment yet. How long do I have to capture it?",
+      "expected_output": "Should state that captures must be processed within 5-7 days (typically) of authorization, explain the CAPTURE API format, and mention that partial captures are supported.",
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Can you help me set up Apple Pay integration with Amazon Payment Services for my iOS app?",
+      "expected_output": "Should explain Mobile Integration options (native iOS SDK), mention Apple Pay is supported across all integration types, and provide guidance on SDK token generation and payment processing flow.",
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "I'm seeing response code 14000 in my APS webhook. What does this mean?",
+      "expected_output": "Should identify 14000 as 'Purchase Success' (status 14 = Purchase Success, message 000 = Success), and explain the response code structure where first 2 digits are status and last 3 are message.",
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "How do I enable installment payments for my customers in Egypt and Saudi Arabia?",
+      "expected_output": "Should explain the Installments service, the two-step process (GET_INSTALLMENTS_PLANS API then PURCHASE with issuer_code and plan_code), note that only PURCHASE command is supported, and mention availability in Egypt, KSA, and UAE.",
+      "files": []
+    }
+  ]
+}
