@@ -1,6 +1,6 @@
 ---
 name: amazon-payment-services
-description: Amazon Payment Services (APS) integration and API usage. Use this skill whenever the user mentions payment integration, accepting payments, payment APIs, checkout flows, payment methods (cards, Apple Pay, KNET, NAPS, STC Pay, MADA, etc.), recurring payments, refunds, captures, 3D Secure, PCI compliance, or any Amazon Payment Services documentation questions. This skill covers all APS integration types: Hosted Checkout, Custom Integration (PCI and Non-PCI), Mobile SDK, Payment Links, and e-commerce plugins.
+description: "Amazon Payment Services (APS) integration and API usage. Use this skill whenever the user mentions payment integration, accepting payments, payment APIs, checkout flows, payment methods (cards, Apple Pay, KNET, NAPS, STC Pay, MADA, etc.), recurring payments, refunds, captures, 3D Secure, PCI compliance, or any Amazon Payment Services documentation questions. This skill covers all APS integration types: Hosted Checkout, Custom Integration (PCI and Non-PCI), Mobile SDK, Payment Links, and e-commerce plugins."
 ---
 
 # Amazon Payment Services Integration Skill
