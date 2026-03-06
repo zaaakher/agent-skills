@@ -149,5 +149,18 @@
     "created": "2026-03-03",
     "updated": "2026-03-03",
     "fileCount": 1
+  },
+  {
+    "slug": "amazon-payment-services-integration",
+    "filePath": "skills/amazon-payment-services-integration/SKILL.md",
+    "name": "amazon-payment-services-integration",
+    "description": "Complete guide to integrating Amazon Payment Services (APS) into Next.js applications using the amazon-payment-services npm package. Use this skill whenever users need to accept payments in Middle East markets (Saudi Arabia, UAE, Kuwait, Qatar, Bahrain, Oman, Egypt, Jordan), implement payment links, hosted checkout, custom payment forms, card tokenization, or handle APS webhooks. This skill covers both sandbox testing and production deployment.",
+    "tags": [],
+    "category": "general",
+    "version": "1.0.0",
+    "public": false,
+    "created": "2026-03-06",
+    "updated": "2026-03-06",
+    "fileCount": 2
   }
 ]
