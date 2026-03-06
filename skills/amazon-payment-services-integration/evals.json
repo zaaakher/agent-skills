@@ -1,0 +1,65 @@
+{
+  "skill_name": "amazon-payment-services-integration",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "Install and configure APS package",
+      "prompt": "I want to add Amazon Payment Services to my Next.js app. I'm in Saudi Arabia and need to accept payments in SAR. How do I get started?",
+      "expected_output": "Should provide installation command, .env.local configuration with Saudi-specific settings (SAR currency), and aps-client.ts helper file setup"
+    },
+    {
+      "id": 2,
+      "eval_name": "Create payment link API",
+      "prompt": "Create an API route that generates a payment link for 150 SAR. The customer email is ahmed@example.com",
+      "expected_output": "Should create POST route using aps.paymentLinks.create() with correct parameter names (merchant_identifier, merchant_reference), amount conversion (150 * 100 = 15000), and customer_email"
+    },
+    {
+      "id": 3,
+      "eval_name": "Implement hosted checkout",
+      "prompt": "I need to redirect customers to a payment page. Create the API endpoint and show me how to redirect from the frontend",
+      "expected_output": "Should create hosted checkout API route with returnUrl parameter (not success_url), and frontend code that creates and submits a POST form to APS endpoint"
+    },
+    {
+      "id": 4,
+      "eval_name": "Custom payment form with tokenization",
+      "prompt": "I want my own payment form design, not a redirect. How do I collect card details securely without being PCI compliant?",
+      "expected_output": "Should explain tokenization flow: 1) Get tokenization form from APS, 2) Render custom form that submits to APS, 3) Handle token response, 4) Charge with token using chargeWithToken()"
+    },
+    {
+      "id": 5,
+      "eval_name": "Handle webhook events",
+      "prompt": "How do I receive notifications when payments succeed or fail?",
+      "expected_output": "Should create webhook API route with signature verification using verifyWebhookSignature(), event construction with constructWebhookEvent(), and switch statement handling payment.success, payment.failed events"
+    },
+    {
+      "id": 6,
+      "eval_name": "Process refund",
+      "prompt": "A customer wants a refund for order txn_123. How do I process a partial refund of 50 SAR?",
+      "expected_output": "Should use aps.payments.refund() with transactionId, amount (5000 fils), and reason parameters"
+    },
+    {
+      "id": 7,
+      "eval_name": "Query transaction status",
+      "prompt": "How can I check if a payment was successful? I have the transaction ID.",
+      "expected_output": "Should use aps.payments.query() with transactionId parameter and explain response status values"
+    },
+    {
+      "id": 8,
+      "eval_name": "Production deployment",
+      "prompt": "I'm ready to go live. What do I need to change from my sandbox setup?",
+      "expected_output": "Should explain: change APS_ENVIRONMENT to 'production', update all credentials to production values, configure production webhook URL, test with small amounts first, ensure HTTPS"
+    },
+    {
+      "id": 9,
+      "eval_name": "Fix signature mismatch error",
+      "prompt": "I'm getting 'Signature mismatch' error when creating payment links. What's wrong?",
+      "expected_output": "Should explain: verify SHA Request Secret is correct, check parameter names are exact (merchant_identifier not merchant_id), ensure alphabetical sorting before signature calculation"
+    },
+    {
+      "id": 10,
+      "eval_name": "MADA card support",
+      "prompt": "Can I accept MADA cards from Saudi customers? How?",
+      "expected_output": "Should confirm MADA support, explain it's automatically available, optionally show how to restrict to MADA using allowedPaymentMethods: ['mada'] in hosted checkout"
+    }
+  ]
+}
