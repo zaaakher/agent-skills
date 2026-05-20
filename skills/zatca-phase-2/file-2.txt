@@ -1,0 +1,739 @@
+# ZATCA Phase 2 TypeScript Integration Skill
+
+## Purpose
+
+This skill teaches an AI agent how to build production-grade ZATCA Phase 2 integrations using:
+
+- TypeScript
+- Node.js
+- React (optional frontend/admin dashboard)
+- PostgreSQL
+- Queue-based async architecture
+
+The agent should generate:
+- clean architecture
+- reusable modules
+- production-safe code
+- sandbox + production support
+- scalable invoice processing
+- secure certificate handling
+
+---
+
+# Core Philosophy
+
+The AI should NEVER generate:
+- monolithic invoice code
+- synchronous checkout-only flows
+- insecure certificate storage
+- business logic mixed with XML generation
+- XML string concatenation hacks
+
+The AI SHOULD generate:
+- modular architecture
+- strong typing
+- async retry pipelines
+- deterministic signing
+- transaction-safe sequencing
+- queue-based submission
+
+---
+
+# Recommended Stack
+
+## Backend
+
+Preferred:
+- Node.js
+- TypeScript
+- Fastify or NestJS
+
+Optional:
+- Express
+
+---
+
+# Database
+
+Preferred:
+- PostgreSQL
+
+Use for:
+- invoice records
+- PIH chain
+- ICV counters
+- onboarding state
+- certificates metadata
+- retry queues
+- audit logs
+
+---
+
+# Queue System
+
+Preferred:
+- BullMQ
+- RabbitMQ
+- SQS
+
+Reason:
+ZATCA APIs should NOT block checkout/payment flows.
+
+---
+
+# Frontend
+
+Preferred:
+- React
+- Next.js
+- TypeScript
+
+Frontend responsibilities:
+- onboarding wizard
+- CSR upload
+- certificate management
+- invoice monitoring
+- retry dashboard
+- compliance logs
+
+Frontend should NEVER:
+- sign invoices
+- store private keys
+- generate hashes
+
+All cryptographic operations belong on the backend.
+
+---
+
+# Project Structure
+
+Recommended architecture:
+
+src/
+  modules/
+    invoices/
+    signing/
+    qr/
+    onboarding/
+    compliance/
+    zatca/
+    certificates/
+    workers/
+  infrastructure/
+    db/
+    queues/
+    crypto/
+    xml/
+  shared/
+    types/
+    utils/
+    constants/
+
+---
+
+# Required Packages
+
+## XML
+
+Recommended:
+- xmlbuilder2
+- fast-xml-parser
+- xmldom
+
+Avoid:
+- manual XML string concatenation
+
+---
+
+# Cryptography
+
+Recommended:
+- node:crypto
+- xadesjs
+- xml-crypto
+- @peculiar/webcrypto
+
+---
+
+# QR
+
+Recommended:
+- qrcode
+- custom TLV encoder
+
+---
+
+# HTTP
+
+Recommended:
+- axios
+- undici
+
+---
+
+# Validation
+
+Recommended:
+- zod
+- class-validator
+
+---
+
+# TypeScript Rules
+
+The AI should ALWAYS:
+- use strict typing
+- avoid any
+- generate interfaces/types
+- separate DTOs from entities
+- validate all external inputs
+
+tsconfig recommendations:
+- strict: true
+- noImplicitAny: true
+- exactOptionalPropertyTypes: true
+
+---
+
+# Recommended Invoice Domain Model
+
+The AI should generate domain types like:
+
+```ts
+interface Invoice {
+  uuid: string;
+  invoiceNumber: string;
+  issueDate: string;
+  seller: Seller;
+  customer?: Customer;
+  lines: InvoiceLine[];
+  totals: InvoiceTotals;
+  invoiceType: "STANDARD" | "SIMPLIFIED";
+}
+```
+
+---
+
+# XML Generation Rules
+
+The AI should:
+- generate deterministic XML
+- preserve namespace order
+- preserve canonical formatting
+- separate XML builder from signing logic
+
+Never:
+- mutate XML after signing
+- insert dynamic whitespace after hashing
+
+---
+
+# UBL Strategy
+
+Preferred approach:
+1. create normalized invoice object
+2. map domain object to UBL structure
+3. serialize XML
+4. canonicalize XML
+5. hash XML
+6. sign XML
+7. append QR
+8. submit to API
+
+---
+
+# Invoice Hashing
+
+Use:
+- SHA256
+
+Implementation:
+```ts
+createHash("sha256")
+```
+
+The AI should understand:
+- hashing must happen AFTER canonicalization
+- even whitespace changes break signatures
+
+---
+
+# Signing Requirements
+
+ZATCA requires:
+- XAdES-BES signatures
+- ECDSA secp256k1 certificates
+
+The AI should:
+- isolate signing logic
+- keep signatures deterministic
+- avoid frontend signing
+
+---
+
+# Certificate Management
+
+## Backend Responsibilities
+
+The backend should:
+- generate CSR
+- request compliance CSID
+- request production CSID
+- rotate certificates
+- securely store metadata
+
+Private keys should:
+- never leave backend
+- preferably use KMS/HSM
+- be encrypted at rest
+
+---
+
+# React Dashboard Responsibilities
+
+Good React UI features:
+- onboarding wizard
+- CSR generation flow
+- invoice status tables
+- retry queue visualization
+- compliance error viewer
+- certificate expiration alerts
+
+---
+
+# Recommended API Layer
+
+Suggested modules:
+
+## zatcaClient.ts
+
+Responsibilities:
+- clearance API
+- reporting API
+- compliance API
+- onboarding API
+
+Should handle:
+- retries
+- auth headers
+- rate limits
+- environment switching
+
+---
+
+# Environment Design
+
+The AI should ALWAYS support:
+
+```env
+ZATCA_ENV=sandbox
+```
+
+or
+
+```env
+ZATCA_ENV=production
+```
+
+Never hardcode endpoints.
+
+---
+
+# Queue-Based Processing
+
+## Required Workflow
+
+1. invoice created
+2. enqueue invoice job
+3. worker generates XML
+4. worker signs invoice
+5. worker submits invoice
+6. worker stores response
+7. worker retries failures
+
+Reason:
+ZATCA outages should not break checkout flows.
+
+---
+
+# Critical Concurrency Problem
+
+## PIH Race Conditions
+
+Multiple invoices generated simultaneously can corrupt:
+- PIH chain
+- ICV sequence
+
+The AI should implement:
+- transactional locking
+- sequence tables
+- mutexes
+- queue serialization
+
+Recommended:
+PostgreSQL row locking.
+
+---
+
+# Recommended PostgreSQL Strategy
+
+Use:
+
+```sql
+SELECT ... FOR UPDATE
+```
+
+when generating:
+- ICV
+- PIH
+
+Never:
+- compute these values in memory only
+
+---
+
+# Retry Strategy
+
+The AI should implement:
+- exponential backoff
+- dead-letter queues
+- replay tools
+
+Recommended retry delays:
+- 5 min
+- 30 min
+- 2 hours
+- 12 hours
+
+---
+
+# Error Handling
+
+The AI should classify errors:
+
+## Retryable
+- network failure
+- timeout
+- temporary API outage
+
+## Fatal
+- invalid XML
+- invalid signature
+- invalid VAT number
+
+Fatal errors should NOT retry infinitely.
+
+---
+
+# Suggested React Components
+
+## InvoiceStatusTable
+
+Displays:
+- invoice UUID
+- status
+- clearance result
+- retry count
+
+---
+
+# Suggested Backend Services
+
+## InvoiceBuilderService
+
+Responsibilities:
+- normalize invoice
+- calculate totals
+- generate UUID
+- prepare XML DTO
+
+---
+
+## XMLGeneratorService
+
+Responsibilities:
+- generate UBL XML
+- preserve namespace ordering
+
+---
+
+## SigningService
+
+Responsibilities:
+- canonicalization
+- SHA256 hash
+- XAdES signature
+
+---
+
+## QRCodeService
+
+Responsibilities:
+- TLV encoding
+- Base64 QR generation
+
+---
+
+## ZATCASubmissionService
+
+Responsibilities:
+- clearance
+- reporting
+- retries
+- persistence
+
+---
+
+# QR Generation
+
+The AI should generate:
+- TLV binary payload
+- Base64 encoding
+
+Never:
+- generate simplistic Phase 1 QR only
+
+Phase 2 QR includes:
+- invoice hash
+- signature
+- public key
+- CA signature
+
+---
+
+# Compliance Validation
+
+The AI should validate:
+- XML schema
+- business rules
+- QR decoding
+- signature verification
+
+before submission.
+
+---
+
+# Security Requirements
+
+The AI should NEVER:
+- log private keys
+- expose CSIDs publicly
+- sign on frontend
+- store plaintext secrets in git
+
+Recommended:
+- Vault
+- AWS KMS
+- Azure Key Vault
+
+---
+
+# Recommended Testing Strategy
+
+## Unit Tests
+
+Test:
+- QR generation
+- hash generation
+- XML serialization
+- VAT calculations
+
+---
+
+# Integration Tests
+
+Test:
+- sandbox onboarding
+- compliance API
+- reporting API
+- clearance API
+
+---
+
+# Snapshot Testing
+
+Recommended for:
+- XML outputs
+
+Reason:
+tiny XML changes can break signatures.
+
+---
+
+# Local Development Strategy
+
+Recommended:
+- docker-compose
+- PostgreSQL
+- Redis
+- local workers
+
+---
+
+# Suggested Docker Services
+
+- api
+- worker
+- postgres
+- redis
+
+---
+
+# Observability
+
+Recommended:
+- structured logs
+- OpenTelemetry
+- Sentry
+
+Track:
+- failed invoices
+- retry rates
+- ZATCA latency
+- certificate expiration
+
+---
+
+# Multi-Tenant SaaS Design
+
+If building SaaS:
+- isolate certificates per tenant
+- isolate PIH chains per tenant
+- isolate invoice counters per tenant
+
+Never share:
+- certificate storage
+- invoice sequences
+
+between tenants.
+
+---
+
+# Recommended Backend Pattern
+
+Preferred:
+- event-driven architecture
+
+Example events:
+- invoice.created
+- invoice.signed
+- invoice.submitted
+- invoice.cleared
+- invoice.failed
+
+---
+
+# Common TypeScript Mistakes
+
+The AI should avoid:
+- mutable XML builders
+- floating-point VAT calculations
+- Date.toString()
+- local timezone ambiguity
+
+Use:
+- decimal libraries
+- ISO timestamps
+- immutable DTOs
+
+---
+
+# Decimal Handling
+
+Recommended:
+- decimal.js
+- big.js
+
+Never:
+- rely on floating point math for VAT
+
+---
+
+# Time Handling
+
+Use:
+- UTC internally
+- ISO 8601 formatting
+
+---
+
+# React UX Suggestions
+
+Good dashboards should show:
+- onboarding progress
+- certificate status
+- failed invoices
+- retry queue
+- API health
+
+---
+
+# Useful Open Source References
+
+Reference implementations:
+- zatca-xml-js
+- zatca-xml-ts
+
+The AI may study:
+- XML generation patterns
+- signing flows
+- onboarding flows
+
+But should improve:
+- architecture
+- typing
+- scalability
+- retry systems
+
+---
+
+# Official Standards
+
+The AI should follow:
+- UBL 2.1
+- XML Implementation Standard
+- Security Features Implementation Standard
+- ZATCA business rules
+
+---
+
+# Production Readiness Checklist
+
+- [ ] sandbox onboarding
+- [ ] production onboarding
+- [ ] XML validation
+- [ ] canonicalization
+- [ ] SHA256 hashing
+- [ ] XAdES signing
+- [ ] TLV QR generation
+- [ ] retry queues
+- [ ] dead-letter queues
+- [ ] PIH locking
+- [ ] ICV sequencing
+- [ ] audit storage
+- [ ] observability
+- [ ] certificate rotation
+
+---
+
+# Final Engineering Philosophy
+
+ZATCA integration is NOT:
+- just QR generation
+- just XML generation
+
+It is:
+- cryptography
+- distributed systems
+- compliance engineering
+- async processing
+- auditability
+- deterministic XML signing
+
+The AI should optimize for:
+- correctness
+- replayability
+- observability
+- resilience
+- maintainability
+- compliance safety
